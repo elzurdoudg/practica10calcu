@@ -1,0 +1,40 @@
+<html>
+<head>
+<style type="text/css">
+	fieldset{
+		margin-left: 37%;
+		width: 20%;
+		margin-top: 10%;
+	}
+	[required]{
+		border-color: transparent;
+		box-shadow: 0px 0px 5px blue;
+	}
+	:invalid{
+		border-color: transparent;
+		box-shadow: 0px 0px 5px blue;
+	};
+
+	</style>
+<title>Practica10</title>
+<script src="calculadora.js">
+</script>
+</head>
+<body>
+<fieldset>
+<p align="center"><font color="black" face="Default" size="5"><b>Calculadora</b></font><br/><br/>
+        <label type="textnumero1">N&uacute;mero1</label><br/>
+		<input type="text" name="n1" id="n1" onkeyUp="return ValNumero(this);" value="" size="20" required><br/>
+		<label type="lblnumero2">N&uacute;mero2</label><br/>
+		<input type="text" name="n2" id="n2" onkeyUp="return ValNumero(this);" value="" size="20"  required><br/><br/><br/><b>
+	    <label type="text">Operaciones</label><br/><b>
+	    <input type="Button" name="btn1" id="btn1" value="+"/>
+        <input type="Button" name="btn2" id="btn2" value="-"/>
+        <input type="Button" name="btn3" id="btn3" value="*"/>
+        <input type="Button" name="btn4" id="btn4" value="/"/>
+        <br/><br/>
+        <label type="textResultado">Resultado</label><br/>
+        <input type="Text" name="resultado" id="res"/>
+        </fieldset>
+        </body>
+        </html>
